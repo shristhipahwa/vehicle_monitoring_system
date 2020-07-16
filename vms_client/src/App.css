@@ -1,6 +1,5 @@
 .App {
   background-color: #aec4bb;
-  flex: 1;
 }
 
 .row-content {
@@ -11,7 +10,7 @@
 }
 
 .sidebar {
-  background-color: #99b186;
+  background-color: #8daa76;
 }
 
 .nav-link {
@@ -21,11 +20,9 @@
   color: black;
 }
 .footer {
-  bottom: 0px;
-
-  background-color: #99b186;
+  background-color: #8daa76;
   margin: 0px auto;
-  padding: 20px 0px 20px 0px;
+  padding: 18px 0px 18px 0px;
   border-style: ridge;
 }
 .row-content1 {
@@ -33,4 +30,7 @@
 }
 .card-button {
   padding: 20px;
+}
+.full {
+  height: 665px;
 }

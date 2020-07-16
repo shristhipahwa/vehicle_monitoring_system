@@ -18,12 +18,12 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <div className="row">
-          <div className="col-12 col-md-2 sidebar">
+        <div className="row ">
+          <div className="col-12 col-md-2 sidebar full">
             <Mycomponent />
           </div>
           <Switch>
-            <div className="col-md-9">
+            <div className="col-md-9  full">
               <Route path="/register" component={Registeration} />
               <Route
                 exact
