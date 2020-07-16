@@ -7,13 +7,19 @@ function Footer(props) {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-3 offset-1 col-sm-3">
-            <i className="fa fa-home fa-lg"></i>
+            <Link to="/user">
+              <i className="fa fa-home fa-lg" />
+            </Link>
           </div>
           <div className="col-3 offset-1  col-sm-3">
-            <i className="fa fa-search fa-lg"></i>
+            <Link to="/register">
+              <i className="fa fa-search fa-lg" />
+            </Link>
           </div>
           <div className="col-3 offset-1 col-sm-3">
-            <i className=" fa fa-address-book fa-lg"></i>
+            <Link to="/register">
+              <i className="fa fa-address-book fa-lg" />
+            </Link>
           </div>
         </div>
       </div>

@@ -14,18 +14,16 @@ class Main extends Component {
       users: USERS,
     };
   }
-  componentDidMount() {
-    document.body.style.backgroundColor = "#aec4bb";
-  }
+
   render() {
     return (
       <div>
-        <div class="row">
+        <div className="row">
           <div className="col-12 col-md-2 sidebar">
             <Mycomponent />
           </div>
           <Switch>
-            <div class="col-md-9">
+            <div className="col-md-9">
               <Route path="/register" component={Registeration} />
               <Route
                 exact

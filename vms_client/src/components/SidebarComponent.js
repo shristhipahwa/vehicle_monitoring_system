@@ -26,13 +26,13 @@ export default class Mycomponent extends React.Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav vertical>
                 <NavItem>
-                  <NavLink className="nav-link" to="/home">
+                  <NavLink className="nav-link" to="/register">
                     <span className="fa fa-list fa-lg"></span> Records
                   </NavLink>
                 </NavItem>
                 <hr />
                 <NavItem>
-                  <NavLink className="nav-link" to="/home">
+                  <NavLink className="nav-link" to="#">
                     <span className="fa fa-list fa-lg"></span> Stats
                   </NavLink>
                 </NavItem>

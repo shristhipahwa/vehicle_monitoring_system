@@ -6,12 +6,12 @@
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
-  border-bottom: 1px ridge;
+
   min-height: 400px;
 }
 
 .sidebar {
-  background-color: #75806d;
+  background-color: #99b186;
 }
 
 .nav-link {
@@ -21,11 +21,16 @@
   color: black;
 }
 .footer {
-  position: fixed;
-  width: 100%;
   bottom: 0px;
-  background-color: #8daa76;
+
+  background-color: #99b186;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
   border-style: ridge;
+}
+.row-content1 {
+  height: 90%;
+}
+.card-button {
+  padding: 20px;
 }
