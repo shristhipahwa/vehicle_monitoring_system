@@ -2,35 +2,56 @@
   background-color: #aec4bb;
 }
 
+/* Maindiv */
+.full {
+  height: 675px;
+}
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
-
   min-height: 400px;
 }
 
+/* sidebar */
 .sidebar {
+  background-color: #8daa76;
+  border-style: ridge;
+}
+
+.navbar-dark {
   background-color: #8daa76;
 }
 
-.nav-link {
-  color: white;
-}
-.nav-link:hover {
+.nav-link,
+.Link {
   color: black;
 }
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* footer */
 .footer {
   background-color: #8daa76;
   margin: 0px auto;
-  padding: 18px 0px 18px 0px;
+  padding: 15px 0px 15px 0px;
   border-style: ridge;
 }
-.row-content1 {
-  height: 90%;
+
+.footer i {
+  color: black;
 }
+.footer i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* Card */
 .card-button {
   padding: 20px;
 }
-.full {
-  height: 665px;
+
+.Card {
+  border: ridge black 1px;
 }

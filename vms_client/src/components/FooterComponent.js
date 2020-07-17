@@ -6,7 +6,7 @@ function Footer(props) {
     <div className="footer">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-3 offset-1 col-sm-3">
+          <div className="col-3 offset-1 col-sm-3 ">
             <Link to="/user">
               <i className="fa fa-home fa-lg" />
             </Link>

@@ -1,17 +1,6 @@
 import React, { Component } from "react";
 
-import {
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardText,
-  CardBody,
-  CardTitle,
-  BreadcrumbItem,
-  Breadcrumb,
-  Col,
-  Button,
-} from "reactstrap";
+import { Card, CardText, CardBody, CardTitle, Col, Button } from "reactstrap";
 class UserDetails extends Component {
   renderUser(user) {
     if (!user) {
@@ -26,6 +15,7 @@ class UserDetails extends Component {
       return (
         <Card>
           <CardBody>
+            <CardTitle>USER INFORMATION</CardTitle>
             <CardText>
               <img src={user.photo[0]} alt={user.fullname}></img>
             </CardText>
@@ -56,7 +46,7 @@ class UserDetails extends Component {
       <div className="container">
         <div className="row">
           <div className="col-md-5 offset-6">
-            <h3>User Information</h3>
+            <h3>USER</h3>
             {this.renderUser(this.props.user)}
           </div>
         </div>

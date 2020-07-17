@@ -27,19 +27,19 @@ export default class Mycomponent extends React.Component {
               <Nav vertical>
                 <NavItem>
                   <NavLink className="nav-link" to="/register">
-                    <span className="fa fa-list fa-lg"></span> Records
+                    <span className="fa fa-list fa-lg"></span> RECORDS
                   </NavLink>
                 </NavItem>
                 <hr />
                 <NavItem>
                   <NavLink className="nav-link" to="#">
-                    <span className="fa fa-list fa-lg"></span> Stats
+                    <span className="fa fa-bar-chart fa-lg"></span> STATS
                   </NavLink>
                 </NavItem>
                 <hr />
                 <NavItem>
                   <NavLink className="nav-link" to="/user">
-                    <span className="fa fa-list fa-lg"></span> User
+                    <span className="fa fa-user fa-lg"></span> USER
                   </NavLink>
                 </NavItem>
               </Nav>
