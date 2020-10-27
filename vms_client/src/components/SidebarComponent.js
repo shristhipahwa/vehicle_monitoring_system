@@ -1,8 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav, NavItem, Navbar, NavbarToggler, Collapse } from "reactstrap";
+import {
+  SideNav,
+  SideNavBody,
+  MenuIcon,
+  MenuHeading,
+} from "react-simple-sidenav";
 import { NavLink } from "react-router-dom";
 
-export default class Mycomponent extends React.Component {
+function SideNavv(props) {
+  const [showNav, setShowNav] = useState(false);
+
+  const navitems = [
+    <NavLink className="nav-link" to="/register">
+      <span className="fa fa-list fa-lg "></span> RECORDS
+    </NavLink>,
+    <NavLink className="nav-link" to="#">
+      <span className="fa fa-bar-chart fa-lg "></span> STATS
+    </NavLink>,
+    <NavLink className="nav-link" to="/user">
+      <span className="fa fa-user fa-lg "></span> USER
+    </NavLink>,
+  ];
+  const navTitle = <h3></h3>;
+
+  return (
+    <div style={{ width: "20%" }}>
+      <div>
+        <MenuIcon onClick={() => setShowNav(!showNav)} class="ml-5" />
+      </div>
+      <SideNav
+        showNav={showNav}
+        onHideNav={() => setShowNav(false)}
+        title={navTitle}
+        titleStyle={{ background: "#3e3c3f" }}
+        items={navitems}
+      />
+    </div>
+  );
+}
+export default SideNavv;
+/*
+export default class SideNav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -50,4 +89,4 @@ export default class Mycomponent extends React.Component {
       </React.Fragment>
     );
   }
-}
+}*/
