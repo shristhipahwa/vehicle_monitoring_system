@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Video from "./VideoComponent";
 import { Card, CardText, CardBody, CardTitle, Col, Button } from "reactstrap";
 class UserDetails extends Component {
   renderUser(user) {
@@ -45,8 +45,13 @@ class UserDetails extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-5 offset-6">
-            <h3>USER</h3>
+          <div className="col-md-6 ">
+          <Video />
+           
+
+    </div> 
+          <div className="col-md offset-1 user">
+            <h3 className="usertitle">USER</h3>
             {this.renderUser(this.props.user)}
           </div>
         </div>
