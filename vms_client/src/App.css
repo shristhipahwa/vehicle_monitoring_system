@@ -1,46 +1,75 @@
 .App {
-  background-color: #aec4bb;
+  background-color: white;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 /* Maindiv */
+
 .full {
-  height: 675px;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 .row-content {
   margin: 0px auto;
-  padding: 50px 0px 50px 0px;
+  padding: 70px 0px 0px 0px;
   min-height: 400px;
 }
 
 /* sidebar */
+
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  background-color: #3e3c3f;
+  margin: 0px auto;
+  padding: 10px 0px 10px 0px;
+  border-style: ridge;
+}
 .sidebar {
-  background-color: #8daa76;
+  background-color: #3e3c3f;
   border-style: ridge;
 }
 
 .navbar-dark {
-  background-color: #8daa76;
+  background-color: #3e3c3f;
+}
+
+.menu {
+  position: fixed;
+  padding-top: 10px;
 }
 
 .nav-link,
 .Link {
   color: black;
 }
+li {
+  list-style-type: none;
+}
 .nav-link:hover {
-  color: white;
+  color: rgb(7, 7, 7);
   cursor: pointer;
 }
 
 /* footer */
 .footer {
-  background-color: #8daa76;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+
+  background-color: #3e3c3f;
   margin: 0px auto;
   padding: 15px 0px 15px 0px;
   border-style: ridge;
 }
 
 .footer i {
-  color: black;
+  color: floralwhite;
 }
 .footer i:hover {
   color: white;
@@ -54,4 +83,20 @@
 
 .Card {
   border: ridge black 1px;
+}
+.user {
+  background-color: black;
+}
+.usertitle {
+  color: white;
+}
+
+.row-margin {
+  margin: 0px auto;
+  padding: 70px 0px 70px 0px;
+}
+
+.top {
+  position: absolute;
+  top: 50%;
 }
